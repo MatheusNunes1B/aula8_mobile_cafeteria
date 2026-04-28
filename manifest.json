@@ -1,0 +1,23 @@
+{
+    "name": "Café Horizonte",
+    "short_name": "Café",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#F5EFE6",
+    "theme_color": "#7C4A1E",
+    "description": "Cardapio digital Café Horizonte",
+    "icons": [
+        {
+            "src": "img/logopwa.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "img/logo512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+}
