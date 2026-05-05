@@ -1,15 +1,14 @@
-const CACHE_NAME = 'haruy-cache-v8';
+const CACHE_NAME = 'haruy-cache-v9';
 const ASSETS = [
     './',
     './index.html',
     './manifest.json',
     './img/logo.png',
     './img/logopwa.png',
-    './img/logo512.png',
+    './img/banner512.png',
     './img/banner.png',
     './img/whatsapp.png'
 ];
-
 self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
@@ -18,7 +17,6 @@ self.addEventListener('install', (event) => {
         })
     );
 });
-
 self.addEventListener('fetch', (event) => {
     event.respondWith(
         caches.match(event.request).then((response) => {
@@ -26,7 +24,6 @@ self.addEventListener('fetch', (event) => {
         })
     );
 });
-
 self.addEventListener('activate', (event) => {
     event.waitUntil(
         caches.keys().then((keys) => {
